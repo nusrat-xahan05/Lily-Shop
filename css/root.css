@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --primary-text: "Lato", sans-serif;
+
+    --banner-background: rgba(229, 84, 115, 0.1);
+    --body-background: rgba(255, 255, 255, 1);
+    --footer-background: rgba(17, 16, 16, 1);
+    --vectoricon-background: rgba(39, 39, 39, 0.05);
+    --highlight-color: rgba(229, 84, 115, 1);
+
+    --featured-background1: rgba(167, 33, 98, 0.15);
+    --featured-background2: rgba(5, 151, 160, 0.15);
+    --featured-background3: rgba(71, 125, 17, 0.15);
+
+    --primary-text-color: rgba(39, 39, 39, 1);
+    --secondary-text-color: rgba(39, 39, 39, 0.6);
+    --tartiary-text-color: rgba(255, 255, 255, 0.9);
+    --fourth-text-color: rgba(255, 255, 255, 1);
+    --vector-text-color: rgba(39, 39, 39, 0.8);
+    --copyright-text-color: rgba(255, 255, 255, 0.4);
+}

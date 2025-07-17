@@ -1,0 +1,139 @@
+ /* ===================================================
+             'ALL COMMON CSS' PART START
+=================================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: var(--primary-text);
+    max-width: 1536px;
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 130px;
+}
+
+.section_heading{
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.section_heading h3{
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--primary-text-color);
+    padding-bottom: 25px;
+}
+
+.section_heading p{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+button{
+    border: 3px solid transparent;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+button a{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    padding: 20px 43px;
+    background-color: var(--highlight-color);
+    color: var(--fourth-text-color);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+button:hover{
+    border: 3px solid var(--highlight-color);
+}
+
+button:hover a{
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+/* ===================================================
+             'ALL COMMON CSS' PART END
+=================================================== */
+
+
+
+/* ===================================================
+                'BANNER' PART START
+=================================================== */
+#banner{
+    background-color: var(--banner-background);
+}
+
+#banner .banner_main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner .banner_main .banner_text{
+    margin: 130px 0px;
+    width: 50%;
+}
+
+#banner .banner_main .banner_text h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--primary-text-color);
+}
+
+#banner .banner_main .banner_text p{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    margin: 32px 0px;
+    color: var(--secondary-text-color);
+}
+
+#banner .banner_main .banner_img{
+    width: 45%;
+    display: flex;
+    align-items: end;
+}
+
+#banner .banner_main .banner_img img{
+    width: 100%;
+}
+/* ===================================================
+                'BANNER' PART END
+=================================================== */
