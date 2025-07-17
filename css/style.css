@@ -1,5 +1,5 @@
  /* ===================================================
-             'ALL COMMON CSS' PART START
+             'COMMON CSS' PART START
 =================================================== */
 *{
     margin: 0;
@@ -89,7 +89,7 @@ button:hover a{
     background-color: transparent;
 }
 /* ===================================================
-             'ALL COMMON CSS' PART END
+             'COMMON CSS' PART END
 =================================================== */
 
 
@@ -136,4 +136,47 @@ button:hover a{
 }
 /* ===================================================
                 'BANNER' PART END
+=================================================== */
+
+
+
+/* ===================================================
+              'FEATURED FLOWER' PART START
+=================================================== */
+#featured .featured_main .featured_body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+#featured .featured_main .featured_body .featured_item .featured_item_img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 440px;
+    border-radius: 50% 50% 0% 0%;
+    -webkit-border-radius: 50% 50% 0% 0%;
+    -moz-border-radius: 50% 50% 0% 0%;
+    -ms-border-radius: 50% 50% 0% 0%;
+    -o-border-radius: 50% 50% 0% 0%;
+}
+
+#featured .featured_main .featured_body .featured_item .featured_item_img img{
+    height: 80%;
+}
+
+#featured .featured_main .featured_body .featured_item:last-child .featured_item_img img{
+    height: 90%;
+}
+
+#featured .featured_main .featured_body .featured_item p{
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--primary-text-color);
+    text-align: center;
+    text-decoration: underline;
+}
+/* ===================================================
+              'FEATURED FLOWER' PART END
 =================================================== */
