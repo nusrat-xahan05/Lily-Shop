@@ -180,3 +180,30 @@ button:hover a{
 /* ===================================================
               'FEATURED FLOWER' PART END
 =================================================== */
+
+
+
+/* ===================================================
+                'VECTOR ICONS' PART START
+=================================================== */
+#vector .vector_main{
+    background-color: var(--vectoricon-background);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+#vector .vector_main .vector_item{
+    text-align: center;
+    padding: 86px 0px;
+}
+
+#vector .vector_main .vector_item p{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--vector-text-color);
+}
+/* ===================================================
+                'VECTOR ICONS' PART END
+=================================================== */
