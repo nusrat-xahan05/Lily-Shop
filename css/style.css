@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+ul, li{
+    list-style-type: none;
+    display: inline-block;
+}
+
 a{
     text-decoration: none;
     display: inline-block;
@@ -90,6 +95,86 @@ button:hover a{
 }
 /* ===================================================
              'COMMON CSS' PART END
+=================================================== */
+
+
+
+/* ===================================================
+                'NAVBAR' PART START
+=================================================== */
+#navbar{
+    background-color: var(--highlight-color);
+    padding: 10px 0px;
+}
+
+#navbar .nav_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .nav_main .nav_logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#navbar .nav_main img{
+    width: 33%;
+}
+
+#navbar .nav_main .nav_logo h2{
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--primary-text-color);
+}
+
+#navbar .nav_main .nav_logo span{
+    color: rgb(246, 230, 234);
+}
+
+#navbar .nav_main .nav_items li a{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-text-color);
+    margin: 0px 18px;
+    position: relative;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+#navbar .nav_main .nav_items li a::after{
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    height: 2px;
+    width: 0%;
+    background: var(--body-background);
+    transform: translateX(-50%);
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#navbar .nav_main .nav_items li a:hover{
+    color: var(--body-background);
+}
+
+#navbar .nav_main .nav_items li a:hover::after{
+    width: 100%;
+}
+/* ===================================================
+                'NAVBAR' PART END
 =================================================== */
 
 
