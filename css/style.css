@@ -276,3 +276,93 @@ button:hover a{
 /* ===================================================
                 'INSTAGRAM' PART END
 =================================================== */
+
+
+
+/* ===================================================
+                'SUBSCRIBE' PART START
+=================================================== */
+#subscribe .subscribe_main{
+    padding: 122px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#subscribe .subscribe_main .section_heading h3{
+    padding-bottom: 16px;
+}
+
+#subscribe .subscribe_main .subscribe_button{
+    margin-top: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#subscribe .subscribe_main .subscribe_button input{
+    padding: 23px;
+    width: 35%;
+    border: transparent;
+    margin-right: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#subscribe .subscribe_main .subscribe_button input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+/* ===================================================
+                'SUBSCRIBE' PART END
+=================================================== */
+
+
+
+/* ===================================================
+                'FOOTER' PART START
+=================================================== */
+footer{
+    background-color: var(--footer-background);
+    text-align: center;
+}
+
+footer .footer_text{
+    padding: 100px 0px 70px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+footer .footer_text h3{
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--fourth-text-color);
+}
+
+footer .footer_text span{
+    color: var(--highlight-color);
+}
+
+footer .footer_text p{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--tartiary-text-color);
+    margin: 24px 0px 32px;
+}
+
+footer .copyright{
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    padding: 25px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--copyright-text-color);
+}
+/* ===================================================
+                'FOOTER' PART END
+=================================================== */
