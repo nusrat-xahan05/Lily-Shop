@@ -207,3 +207,72 @@ button:hover a{
 /* ===================================================
                 'VECTOR ICONS' PART END
 =================================================== */
+
+
+
+/* ===================================================
+                  'SIGN UP' PART START
+=================================================== */
+#signup{
+    background-color: var(--banner-background);
+}
+
+#signup .signup_main{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#signup .signup_main .section_heading{
+    width: 55%;
+    margin-bottom: 0px;
+}
+
+#signup .signup_main .section_heading p{
+    max-width: 80%;
+    margin-bottom: 32px;
+}
+
+#signup .signup_main .section_heading span{
+    color: var(--highlight-color);
+}
+
+#signup .signup_main .sign_img{
+    width: 40%;
+    text-align: center;
+}
+/* ===================================================
+                  'SIGN UP' PART END
+=================================================== */
+
+
+
+/* ===================================================
+                'INSTAGRAM' PART START
+=================================================== */
+#instagram .instagram_main .instagram_body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+#instagram .instagram_main .instagram_body .instagram_item img{
+    width: 100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#instagram .instagram_main .instagram_body .instagram_item:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* ===================================================
+                'INSTAGRAM' PART END
+=================================================== */
