@@ -105,6 +105,11 @@ button:hover a{
 #navbar{
     background-color: var(--highlight-color);
     padding: 10px 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 #navbar .nav_main{
@@ -173,6 +178,20 @@ button:hover a{
 #navbar .nav_main .nav_items li a:hover::after{
     width: 100%;
 }
+
+.navbar_animate{
+    animation: custom 2s;
+    -webkit-animation: custom 2s;
+}
+
+@keyframes custom{
+    from{
+        top: -60px;
+    }
+    to{
+        top: 0px;
+    }
+}
 /* ===================================================
                 'NAVBAR' PART END
 =================================================== */
@@ -184,6 +203,7 @@ button:hover a{
 =================================================== */
 #banner{
     background-color: var(--banner-background);
+    padding-top: 120px;
 }
 
 #banner .banner_main{
@@ -192,7 +212,7 @@ button:hover a{
 }
 
 #banner .banner_main .banner_text{
-    margin: 130px 0px;
+    margin: 100px 0px;
     width: 50%;
 }
 
@@ -217,7 +237,7 @@ button:hover a{
 }
 
 #banner .banner_main .banner_img img{
-    width: 100%;
+    width: 95%;
 }
 /* ===================================================
                 'BANNER' PART END
