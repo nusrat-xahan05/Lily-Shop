@@ -1,0 +1,124 @@
+@media screen and (max-width: 1280px) {
+    #banner {
+        padding-top: 100px;
+    }
+
+    #banner .banner_main .banner_text h1 {
+        font-size: 60px;
+    }
+
+    #featured .featured_main .featured_body .featured_item .featured_item_img {
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .section_heading p {
+        max-width: 75%;
+    }
+
+    #banner {
+        padding-top: 75px;
+    }
+
+    #banner .banner_main .banner_text h1 {
+        font-size: 50px;
+    }
+
+    #banner .banner_main .banner_img img {
+        width: 100%;
+    }
+
+    #featured .featured_main .featured_body .featured_item .featured_item_img {
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #navbar .nav_main .nav_hambergur {
+        display: block;
+    }
+
+    #navbar .nav_main .nav_items {
+        display: none;
+    }
+
+    #navbar .nav_main .nav_hambergur {
+        display: block;
+    }
+
+    #banner {
+        background: url(../images/banner.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 60%;
+        position: relative;
+    }
+
+    #banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--banner-background);
+    }
+
+    #banner .banner_main .banner_text {
+        width: 80%;
+    }
+
+    #banner .banner_main .banner_img {
+        display: none;
+    }
+
+    #featured .featured_main .featured_body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #vector .vector_main .vector_item {
+        padding: 56px 0px;
+    }
+
+    #vector .vector_main .vector_item img {
+        width: 45%;
+    }
+
+    #vector .vector_main .vector_item p {
+        font-size: 20px;
+    }
+
+    #signup {
+        background: linear-gradient(rgba(255, 255, 255, 0.4), var(--banner-background)), url(../images/sale-deal.png);
+        background-repeat: no-repeat;
+        background-size: fill;
+    }
+
+    #signup .signup_main .section_heading {
+        width: 100%;
+    }
+
+    #signup .signup_main .sign_img {
+        display: none;
+    }
+
+    #instagram .instagram_main .instagram_body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #subscribe .subscribe_main {
+        padding: 90px 0px;
+    }
+
+    #subscribe .subscribe_main .subscribe_button input {
+        width: 55%;
+    }
+
+    footer .footer_text {
+        max-width: 70%;
+    }
+
+}

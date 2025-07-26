@@ -1,473 +1,499 @@
  /* ===================================================
              'COMMON CSS' PART START
 =================================================== */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-ul, li{
-    list-style-type: none;
-    display: inline-block;
-}
+ ul,
+ li {
+     list-style-type: none;
+     display: inline-block;
+ }
 
-a{
-    text-decoration: none;
-    display: inline-block;
-}
+ a {
+     text-decoration: none;
+     display: inline-block;
+ }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
+ .container {
+     width: 85%;
+     margin: 0 auto;
+ }
 
-body{
-    font-family: var(--primary-text);
-    max-width: 1536px;
-    margin: 0 auto;
-}
+ body {
+     font-family: var(--primary-text);
+     max-width: 1536px;
+     margin: 0 auto;
+ }
 
-section{
-    margin-bottom: 130px;
-}
+ section {
+     margin-bottom: 130px;
+ }
 
-.section_heading{
-    margin-bottom: 48px;
-    text-align: center;
-}
+ .section_heading {
+     margin-bottom: 48px;
+     text-align: center;
+ }
 
-.section_heading h3{
-    font-weight: 800;
-    font-size: 40px;
-    color: var(--primary-text-color);
-    padding-bottom: 25px;
-}
+ .section_heading h3 {
+     font-weight: 800;
+     font-size: 40px;
+     color: var(--primary-text-color);
+     padding-bottom: 25px;
+ }
 
-.section_heading p{
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--secondary-text-color);
-    max-width: 50%;
-    margin: 0 auto;
-}
+ .section_heading p {
+     font-weight: 400;
+     font-size: 18px;
+     color: var(--secondary-text-color);
+     max-width: 50%;
+     margin: 0 auto;
+ }
 
-button{
-    border: 3px solid transparent;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    transition: .4s;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -ms-transition: .4s;
-    -o-transition: .4s;
-}
+ button {
+     border: 3px solid transparent;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+     transition: .4s;
+     -webkit-transition: .4s;
+     -moz-transition: .4s;
+     -ms-transition: .4s;
+     -o-transition: .4s;
+ }
 
-button a{
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--secondary-text-color);
-    padding: 20px 43px;
-    background-color: var(--highlight-color);
-    color: var(--fourth-text-color);
-    transition: .4s;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -ms-transition: .4s;
-    -o-transition: .4s;
-}
+ button a {
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+     font-weight: 700;
+     font-size: 20px;
+     color: var(--secondary-text-color);
+     padding: 20px 43px;
+     background-color: var(--highlight-color);
+     color: var(--fourth-text-color);
+     transition: .4s;
+     -webkit-transition: .4s;
+     -moz-transition: .4s;
+     -ms-transition: .4s;
+     -o-transition: .4s;
+ }
 
-button:hover{
-    border: 3px solid var(--highlight-color);
-}
+ button:hover {
+     border: 3px solid var(--highlight-color);
+ }
 
-button:hover a{
-    color: var(--highlight-color);
-    background-color: transparent;
-}
-/* ===================================================
+ button:hover a {
+     color: var(--highlight-color);
+     background-color: transparent;
+ }
+
+ /* ===================================================
              'COMMON CSS' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                 'NAVBAR' PART START
 =================================================== */
-#navbar{
-    background-color: var(--highlight-color);
-    padding: 10px 0px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
+ #navbar {
+     background-color: var(--highlight-color);
+     padding: 10px 0px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 10;
+ }
 
-#navbar .nav_main{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+ #navbar .nav_main {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
 
-#navbar .nav_main .nav_logo{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
+ #navbar .nav_main .nav_hambergur {
+     display: none;
+ }
 
-#navbar .nav_main img{
-    width: 33%;
-}
+ #navbar .nav_main .nav_hambergur .material-symbols-outlined {
+     padding: 8px;
+     font-size: 30px;
+     border: 2px solid black;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+ }
 
-#navbar .nav_main .nav_logo h2{
-    font-weight: 900;
-    font-size: 32px;
-    color: var(--primary-text-color);
-}
+ #navbar .nav_main .nav_logo {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+ }
 
-#navbar .nav_main .nav_logo span{
-    color: rgb(246, 230, 234);
-}
+ #navbar .nav_main img {
+     width: 33%;
+ }
 
-#navbar .nav_main .nav_items li a{
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--primary-text-color);
-    margin: 0px 18px;
-    position: relative;
-    transition: .4s;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -ms-transition: .4s;
-    -o-transition: .4s;
-}
+ #navbar .nav_main .nav_logo h2 {
+     font-weight: 900;
+     font-size: 32px;
+     color: var(--primary-text-color);
+ }
 
-#navbar .nav_main .nav_items li a::after{
-    position: absolute;
-    content: '';
-    bottom: -10px;
-    left: 50%;
-    height: 2px;
-    width: 0%;
-    background: var(--body-background);
-    transform: translateX(-50%);
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-}
+ #navbar .nav_main .nav_logo span {
+     color: rgb(246, 230, 234);
+ }
 
-#navbar .nav_main .nav_items li a:hover{
-    color: var(--body-background);
-}
+ #navbar .nav_main .nav_items li a {
+     font-weight: 700;
+     font-size: 18px;
+     color: var(--primary-text-color);
+     margin: 0px 18px;
+     position: relative;
+     transition: .4s;
+     -webkit-transition: .4s;
+     -moz-transition: .4s;
+     -ms-transition: .4s;
+     -o-transition: .4s;
+ }
 
-#navbar .nav_main .nav_items li a:hover::after{
-    width: 100%;
-}
+ #navbar .nav_main .nav_items li a::after {
+     position: absolute;
+     content: '';
+     bottom: -10px;
+     left: 50%;
+     height: 2px;
+     width: 0%;
+     background: var(--body-background);
+     transform: translateX(-50%);
+     transition: .2s;
+     -webkit-transition: .2s;
+     -moz-transition: .2s;
+     -ms-transition: .2s;
+     -o-transition: .2s;
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+ }
 
-.navbar_animate{
-    animation: custom 2s;
-    -webkit-animation: custom 2s;
-}
+ #navbar .nav_main .nav_items li a:hover {
+     color: var(--body-background);
+ }
 
-@keyframes custom{
-    from{
-        top: -60px;
-    }
-    to{
-        top: 0px;
-    }
-}
-/* ===================================================
+ #navbar .nav_main .nav_items li a:hover::after {
+     width: 100%;
+ }
+
+ .navbar_animate {
+     animation: custom 2s;
+     -webkit-animation: custom 2s;
+ }
+
+ @keyframes custom {
+     from {
+         top: -60px;
+     }
+
+     to {
+         top: 0px;
+     }
+ }
+
+ /* ===================================================
                 'NAVBAR' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                 'BANNER' PART START
 =================================================== */
-#banner{
-    background-color: var(--banner-background);
-    padding-top: 120px;
-}
+ #banner {
+     background-color: var(--banner-background);
+     padding-top: 120px;
+ }
 
-#banner .banner_main{
-    display: flex;
-    justify-content: space-between;
-}
+ #banner .banner_main {
+     display: flex;
+     justify-content: space-between;
+ }
 
-#banner .banner_main .banner_text{
-    margin: 100px 0px;
-    width: 50%;
-}
+ #banner .banner_main .banner_text {
+     margin: 100px 0px;
+     width: 50%;
+ }
 
-#banner .banner_main .banner_text h1{
-    font-weight: 700;
-    font-size: 70px;
-    color: var(--primary-text-color);
-}
+ #banner .banner_main .banner_text h1 {
+     font-weight: 700;
+     font-size: 70px;
+     color: var(--primary-text-color);
+ }
 
-#banner .banner_main .banner_text p{
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--secondary-text-color);
-    margin: 32px 0px;
-    color: var(--secondary-text-color);
-}
+ #banner .banner_main .banner_text p {
+     font-weight: 400;
+     font-size: 18px;
+     color: var(--secondary-text-color);
+     margin: 32px 0px;
+     color: var(--secondary-text-color);
+ }
 
-#banner .banner_main .banner_img{
-    width: 45%;
-    display: flex;
-    align-items: end;
-}
+ #banner .banner_main .banner_img {
+     width: 45%;
+     display: flex;
+     align-items: end;
+ }
 
-#banner .banner_main .banner_img img{
-    width: 95%;
-}
-/* ===================================================
+ #banner .banner_main .banner_img img {
+     width: 95%;
+ }
+
+ /* ===================================================
                 'BANNER' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
               'FEATURED FLOWER' PART START
 =================================================== */
-#featured .featured_main .featured_body{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
+ #featured .featured_main .featured_body {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 24px;
+ }
 
-#featured .featured_main .featured_body .featured_item .featured_item_img{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 440px;
-    border-radius: 50% 50% 0% 0%;
-    -webkit-border-radius: 50% 50% 0% 0%;
-    -moz-border-radius: 50% 50% 0% 0%;
-    -ms-border-radius: 50% 50% 0% 0%;
-    -o-border-radius: 50% 50% 0% 0%;
-}
+ #featured .featured_main .featured_body .featured_item .featured_item_img {
+     display: flex;
+     justify-content: center;
+     align-items: end;
+     height: 440px;
+     border-radius: 50% 50% 0% 0%;
+     -webkit-border-radius: 50% 50% 0% 0%;
+     -moz-border-radius: 50% 50% 0% 0%;
+     -ms-border-radius: 50% 50% 0% 0%;
+     -o-border-radius: 50% 50% 0% 0%;
+ }
 
-#featured .featured_main .featured_body .featured_item .featured_item_img img{
-    height: 80%;
-}
+ #featured .featured_main .featured_body .featured_item .featured_item_img img {
+     height: 80%;
+ }
 
-#featured .featured_main .featured_body .featured_item:last-child .featured_item_img img{
-    height: 90%;
-}
+ #featured .featured_main .featured_body .featured_item:last-child .featured_item_img img {
+     height: 90%;
+ }
 
-#featured .featured_main .featured_body .featured_item p{
-    margin-top: 32px;
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--primary-text-color);
-    text-align: center;
-    text-decoration: underline;
-}
-/* ===================================================
+ #featured .featured_main .featured_body .featured_item p {
+     margin-top: 32px;
+     font-weight: 600;
+     font-size: 24px;
+     color: var(--primary-text-color);
+     text-align: center;
+     text-decoration: underline;
+ }
+
+ /* ===================================================
               'FEATURED FLOWER' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                 'VECTOR ICONS' PART START
 =================================================== */
-#vector .vector_main{
-    background-color: var(--vectoricon-background);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-}
+ #vector .vector_main {
+     background-color: var(--vectoricon-background);
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 100px;
+ }
 
-#vector .vector_main .vector_item{
-    text-align: center;
-    padding: 86px 0px;
-}
+ #vector .vector_main .vector_item {
+     text-align: center;
+     padding: 86px 0px;
+ }
 
-#vector .vector_main .vector_item p{
-    margin-top: 24px;
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--vector-text-color);
-}
-/* ===================================================
+ #vector .vector_main .vector_item p {
+     margin-top: 24px;
+     font-weight: 600;
+     font-size: 24px;
+     color: var(--vector-text-color);
+ }
+
+ /* ===================================================
                 'VECTOR ICONS' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                   'SIGN UP' PART START
 =================================================== */
-#signup{
-    background-color: var(--banner-background);
-}
+ #signup {
+     background-color: var(--banner-background);
+ }
 
-#signup .signup_main{
-    padding: 40px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+ #signup .signup_main {
+     padding: 40px 0px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
 
-#signup .signup_main .section_heading{
-    width: 55%;
-    margin-bottom: 0px;
-}
+ #signup .signup_main .section_heading {
+     width: 55%;
+     margin-bottom: 0px;
+ }
 
-#signup .signup_main .section_heading p{
-    max-width: 80%;
-    margin-bottom: 32px;
-}
+ #signup .signup_main .section_heading p {
+     max-width: 80%;
+     margin-bottom: 32px;
+ }
 
-#signup .signup_main .section_heading span{
-    color: var(--highlight-color);
-}
+ #signup .signup_main .section_heading span {
+     color: var(--highlight-color);
+ }
 
-#signup .signup_main .sign_img{
-    width: 40%;
-    text-align: center;
-}
-/* ===================================================
+ #signup .signup_main .sign_img {
+     width: 40%;
+     text-align: center;
+ }
+
+ /* ===================================================
                   'SIGN UP' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                 'INSTAGRAM' PART START
 =================================================== */
-#instagram .instagram_main .instagram_body{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-}
+ #instagram .instagram_main .instagram_body {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 24px;
+ }
 
-#instagram .instagram_main .instagram_body .instagram_item img{
-    width: 100%;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-}
+ #instagram .instagram_main .instagram_body .instagram_item img {
+     width: 100%;
+     transition: .5s;
+     -webkit-transition: .5s;
+     -moz-transition: .5s;
+     -ms-transition: .5s;
+     -o-transition: .5s;
+ }
 
-#instagram .instagram_main .instagram_body .instagram_item:hover img{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-/* ===================================================
+ #instagram .instagram_main .instagram_body .instagram_item:hover img {
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+
+ /* ===================================================
                 'INSTAGRAM' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                 'SUBSCRIBE' PART START
 =================================================== */
-#subscribe .subscribe_main{
-    padding: 122px 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe-banner.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+ #subscribe .subscribe_main {
+     padding: 122px 0px;
+     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe-banner.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
 
-#subscribe .subscribe_main .section_heading h3{
-    padding-bottom: 16px;
-}
+ #subscribe .subscribe_main .section_heading h3 {
+     padding-bottom: 16px;
+ }
 
-#subscribe .subscribe_main .subscribe_button{
-    margin-top: 48px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ #subscribe .subscribe_main .subscribe_button {
+     margin-top: 48px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
-#subscribe .subscribe_main .subscribe_button input{
-    padding: 23px;
-    width: 35%;
-    border: transparent;
-    margin-right: 8px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
+ #subscribe .subscribe_main .subscribe_button input {
+     padding: 23px;
+     width: 35%;
+     border: transparent;
+     margin-right: 8px;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+ }
 
-#subscribe .subscribe_main .subscribe_button input::placeholder{
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--secondary-text-color);
-}
-/* ===================================================
+ #subscribe .subscribe_main .subscribe_button input::placeholder {
+     font-size: 16px;
+     font-weight: 400;
+     color: var(--secondary-text-color);
+ }
+
+ /* ===================================================
                 'SUBSCRIBE' PART END
 =================================================== */
 
 
 
-/* ===================================================
+ /* ===================================================
                 'FOOTER' PART START
 =================================================== */
-footer{
-    background-color: var(--footer-background);
-    text-align: center;
-}
+ footer {
+     background-color: var(--footer-background);
+     text-align: center;
+ }
 
-footer .footer_text{
-    padding: 100px 0px 70px;
-    max-width: 50%;
-    margin: 0 auto;
-}
+ footer .footer_text {
+     padding: 100px 0px 70px;
+     max-width: 50%;
+     margin: 0 auto;
+ }
 
-footer .footer_text h3{
-    font-weight: 800;
-    font-size: 48px;
-    color: var(--fourth-text-color);
-}
+ footer .footer_text h3 {
+     font-weight: 800;
+     font-size: 48px;
+     color: var(--fourth-text-color);
+ }
 
-footer .footer_text span{
-    color: var(--highlight-color);
-}
+ footer .footer_text span {
+     color: var(--highlight-color);
+ }
 
-footer .footer_text p{
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--tartiary-text-color);
-    margin: 24px 0px 32px;
-}
+ footer .footer_text p {
+     font-weight: 400;
+     font-size: 18px;
+     color: var(--tartiary-text-color);
+     margin: 24px 0px 32px;
+ }
 
-footer .copyright{
-    border-top: 2px solid rgba(255, 255, 255, 0.7);
-    padding: 25px 0px;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--copyright-text-color);
-}
-/* ===================================================
+ footer .copyright {
+     border-top: 2px solid rgba(255, 255, 255, 0.7);
+     padding: 25px 0px;
+     font-weight: 400;
+     font-size: 16px;
+     color: var(--copyright-text-color);
+ }
+
+ /* ===================================================
                 'FOOTER' PART END
 =================================================== */
