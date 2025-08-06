@@ -10,7 +10,6 @@
     #featured .featured_main .featured_body .featured_item .featured_item_img {
         height: 380px;
     }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -43,10 +42,6 @@
 
     #navbar .nav_main .nav_items {
         display: none;
-    }
-
-    #navbar .nav_main .nav_hambergur {
-        display: block;
     }
 
     #banner {
@@ -120,5 +115,96 @@
     footer .footer_text {
         max-width: 70%;
     }
+}
 
+@media screen and (max-width: 480px) {
+    .section_heading p {
+        font-size: 17px;
+        max-width: 95%;
+    }
+
+    button {
+        margin-bottom: 50px;
+    }
+
+    button a {
+        font-size: 20px;
+        padding: 15px 38px;
+    }
+
+    #banner {
+        background-size: 70%;
+    }
+
+    #banner .banner_main {
+        display: block;
+    }
+
+    #banner .banner_main .banner_text {
+        width: 95%;
+    }
+
+    #banner .banner_main .banner_text h1 {
+        font-size: 40px;
+    }
+
+    #featured .featured_main .featured_body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #featured .featured_main .featured_body .featured_item .featured_item_img {
+        height: 200px;
+    }
+
+    #featured .featured_main .featured_body .featured_item p {
+        margin-top: 18px;
+        font-size: 18px;
+    }
+
+    #vector .vector_main {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 30px 0px 30px;
+    }
+
+    #vector .vector_main .vector_item {
+        padding: 0px 0px 0px;
+    }
+
+    #vector .vector_main .vector_item img {
+        width: 25%;
+    }
+
+    #vector .vector_main .vector_item p {
+        font-size: 20px;
+    }
+
+    #subscribe .subscribe_main {
+        padding: 60px 0px 10px;
+    }
+
+    #subscribe .subscribe_main .section_heading h3 {
+        font-size: 34px;
+    }
+
+    #subscribe .subscribe_main .subscribe_button {
+        flex-direction: column;
+        gap: 15px
+    }
+
+    #subscribe .subscribe_main .subscribe_button input {
+        width: 80%;
+    }
+
+    footer .footer_text h3 {
+        font-size: 40px;
+    }
+
+    footer .footer_text p {
+        font-size: 17px;
+    }
+
+    footer .footer_text {
+        max-width: 90%;
+    }
 }

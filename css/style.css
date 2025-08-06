@@ -122,12 +122,13 @@
 
  #navbar .nav_main .nav_hambergur {
      display: none;
+     color: white;
  }
 
  #navbar .nav_main .nav_hambergur .material-symbols-outlined {
      padding: 8px;
      font-size: 30px;
-     border: 2px solid black;
+     border: 2px solid white;
      border-radius: 50%;
      -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
@@ -236,7 +237,7 @@
  }
 
  #banner .banner_main .banner_text h1 {
-     font-weight: 700;
+     font-weight: 800;
      font-size: 70px;
      color: var(--primary-text-color);
  }
@@ -302,14 +303,13 @@
      text-align: center;
      text-decoration: underline;
  }
-
- /* ===================================================
+/* ===================================================
               'FEATURED FLOWER' PART END
 =================================================== */
 
 
 
- /* ===================================================
+/* ===================================================
                 'VECTOR ICONS' PART START
 =================================================== */
  #vector .vector_main {
@@ -325,19 +325,19 @@
  }
 
  #vector .vector_main .vector_item p {
-     margin-top: 24px;
+     margin-top: 20px;
      font-weight: 600;
      font-size: 24px;
      color: var(--vector-text-color);
  }
 
- /* ===================================================
+/* ===================================================
                 'VECTOR ICONS' PART END
 =================================================== */
 
 
 
- /* ===================================================
+/* ===================================================
                   'SIGN UP' PART START
 =================================================== */
  #signup {
